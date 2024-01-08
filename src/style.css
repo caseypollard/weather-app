@@ -12,6 +12,11 @@ body {
     padding: 30px;
 }
 
+header {
+    border-bottom: 1px solid #f8e3e8;
+    padding: 20px 0;
+}
+
 .search-form-input {
     background-color: #f8e3e8;
     border: none;
@@ -32,3 +37,14 @@ body {
     font-weight: 600;
 }
 
+footer {
+    border-top: 1px solid #f8e3e8;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+a {
+    color: #FB9EBB;
+}
