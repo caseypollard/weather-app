@@ -1,5 +1,6 @@
 body {
     background-color: #f8e3e8;
+    font-family: 'Roboto', sans-serif;
 }
 
 .weather-app {
@@ -10,4 +11,6 @@ body {
     box-shadow: 0 20px 40px #909090;
     padding: 30px;
 }
+
+
 
