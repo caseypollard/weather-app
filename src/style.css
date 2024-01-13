@@ -76,7 +76,7 @@ main {
 
 .current-temperature{
     position: relative;
-    right: -360px;
+    right: -380px;
     top: -80px;
 }
 .temperature-value {
