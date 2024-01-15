@@ -54,14 +54,23 @@ main {
     font-weight: 500;
 }
 
+.current-time {
+    position: relative;
+    left: -128px;
+    bottom: -20px;
+    font-size: 20px;
+    color: #f8e3e8;
+    font-weight: 500;
+}
+
 .weather-app-details {
     position: relative;
-    left: -158px;
-    bottom: -50px;
+    left: -232px;
+    bottom: -90px;
     font-size: 15px;
     color: #f8e3e8;
     line-height: 20px;
-    padding: 0 0 40px 0;
+    padding: 0 0 80px 0;
 }
 
 .weather-app-details strong {
@@ -70,18 +79,17 @@ main {
 
 .current-temperature {
     display: flex;
+    position: relative;
+    bottom: -50px;
+    left: -60px;
 }
 
 .temperature-icon {
     position: relative;
-    left: -12px;
-    bottom: -5px;
+    top: -5px;
 }
 
 .temperature-value {
-    position: relative;
-    bottom: -20px;
-    left: -30px;
     font-size: 70px;
     color: #f8e3e8;
     font-weight: 600;
@@ -89,8 +97,7 @@ main {
 
 .temperature-unit {
     position: relative;
-    bottom: -30px;
-    left: -30px;
+    bottom: -10px;
     font-size: 20px;
     color: #FB9EBB;
     font-weight: 500;
