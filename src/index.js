@@ -7,12 +7,14 @@ function currentCityTemp(response) {
     let windSpeedElement = document.querySelector("#wind-speed");
     let timeElement = document.querySelector("#current-time");
     let date = new Date(response.data.time * 1000);
+    let iconElement = document.querySelector("#temperature-icon")
     temperatureElement.innerHTML = Math.round(temperature); 
     cityElement.innerHTML = response.data.city; 
     descriptionElement.innerHTML = response.data.condition.description;
     humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
     windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
     timeElement.innerHTML = formatDate(date);
+    iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="temperature-icon"/>`;
 }
 
 function formatDate(date) {
@@ -22,7 +24,7 @@ function formatDate(date) {
     let day = days[date.getDay()];
 
     if (minutes < 10) {
-        minutes = `0${minute}`;
+        minutes = `0${minutes}`;
     }
 
     if (hours < 10) {
