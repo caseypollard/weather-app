@@ -69,29 +69,58 @@ main {
 }
 
 .current-temperature {
-  display: flex;
-  position: relative;
-  top: -130px;
-  right: -320px;
-}
-
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -115px;
+    right: -315px;
+    margin-bottom: -115px;
+  }
+  
 .temperature-icon {
-    position: relative;
-    top: -5px;
-}
-
+     position: relative;
+     top: -5px;
+  }
+  
 .temperature-value {
-    font-size: 70px;
-    color: #f8e3e8;
-    font-weight: 600;
+      font-size: 70px;
+      color: #f8e3e8;
+      font-weight: 600;
+  }
+  
+.temperature-unit {
+      position: relative;
+      bottom: -5px;
+      font-size: 20px;
+      color: #FB9EBB;
+      font-weight: 500;
+  }
+
+.forecast-heading {
+    margin: 25px 0 10px 0;
+    font-size: 14px;
+    color: #FB9EBB;
+    font-weight: bold;
 }
 
-.temperature-unit {
-    position: relative;
-    bottom: -8px;
-    font-size: 20px;
+.weather-forecast {
+    text-align: center;
+    display: inline-block;
+}
+
+.forecast-day {
+    font-size: 16px;
+    color: #f8e3e8;
+    font-weight: bold;
+}
+
+.forecast-temp {
+    font-size: 15px;
     color: #FB9EBB;
-    font-weight: 500;
+}
+
+.forecast-temp-min {
+    opacity: 0.6;
 }
 
 footer {
