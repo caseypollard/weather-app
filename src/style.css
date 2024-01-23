@@ -103,9 +103,12 @@ main {
     font-weight: bold;
 }
 
-.weather-forecast {
-    text-align: center;
-    display: inline-block;
+.forecast {
+   text-align: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 20px;
 }
 
 .forecast-day {

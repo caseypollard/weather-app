@@ -49,4 +49,31 @@ function handleSearchForm(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchForm);
 
+function displayForecast() {
+let forecastElement = document.querySelector("#forecast");
+let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+let forecastHtml = "";
+
+days.forEach (function (day) {
+    forecastHtml =
+    forecastHtml +
+     `
+    <div class="row">
+        <div class="col-2">
+            <div class="forecast-day">
+              ${day}
+            </div>
+            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" width="50">
+            <div class="forecast-temp">
+              <span class="forecast-temp-max">32°</span> 
+              <span class="forecast-temp-min">21°</span>
+            </div>
+        </div>
+    </div>
+`;
+});
+
+forecastElement.innerHTML = forecastHtml;
+}
+
 searchCity("Sydney");
